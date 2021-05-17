@@ -11,7 +11,7 @@ export default function App() {
     <div className='bigBoard'> 
       <Octave pitch={4} showNote={true}/>
       <Octave pitch={5}/>
-      <Octave pitch={6}/>
+      {/* <Octave pitch={6}/> */}
     </div>
   
     </div>
