@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import * as Tone from "tone";
+import Octave from './components/Octave';
 
-function App() {
+export default function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Piano App Hackathon</h1>
+    <div className='bigBoard'> 
+      <Octave pitch={4} showNote={true}/>
+      <Octave pitch={5}/>
+      <Octave pitch={6}/>
+    </div>
+  
     </div>
   );
 }
-
-export default App;

@@ -24,15 +24,50 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+  .bigBoard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .keyboard {
+    display: grid;
+    grid-template-columns: 44px 20px 44px 20px 44px 44px 20px 44px 20px 44px 20px 44px;
+    grid-template-rows: 100px 100px;
+  
+  }
+  .wholeKey {
+    border: 1px solid black;
+    background-color: white;
+    grid-row: 1/4;
+    z-index: 1;
+    text-align: center;
+  }
+  #C,
+  #E,
+  #F,
+  #B{
+    width: 60px;
+  }
+  #D,
+  #G,
+  #A{
+    width: 65px;
+  }
+  #D,
+  #E,
+  #G,
+  #A,
+  #B {
+    position: relative;
+    right: 5px;
+  }
+  .sharpkey {
+    background-color: black;
+    color: white;
+    grid-row: 1/2;
+    z-index: 100;
+    text-align: center;
+    position: relative;
+    left: 5px;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
