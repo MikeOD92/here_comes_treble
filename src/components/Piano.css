@@ -1,0 +1,33 @@
+.newPiano {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	min-height: 30vh;
+	background-color: #143f6b;
+}
+.piano {
+	display: flex;
+	align-self: center;
+}
+.octave {
+	display: flex;
+}
+.key {
+	--width: 57px;
+	/* Only update ^This width to resize keyboard*/
+}
+.whiteKey {
+	width: var(--width);
+	height: calc(var(--width) * 4);
+	background-color: white;
+	border: 1px solid black;
+}
+.blackKey {
+	color: white;
+	width: calc(var(--width) / 2);
+	margin-left: calc(var(--width) / -4);
+	margin-right: calc(var(--width) / -4);
+	height: 135px;
+	background-color: black;
+	z-index: 2;
+}

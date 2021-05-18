@@ -1,20 +1,30 @@
-import * as Tone from "tone";
+import Keys from './Keys.js'
+// import * as Tone from "tone";
 
 export default function Octave(props) {
+// const synth = new Tone.Synth().toDestination();
 
-const synth = new Tone.Synth().toDestination();
-
-const sound = (note) => {
-    synth.triggerAttackRelease(`${note}${props.pitch}`, "8n");
-    console.log(`you played ${note}`)
-};
-
-
-
+// const sound = (note) => {
+//     synth.triggerAttackRelease(`${note}${props.pitch}`, "8n");
+//     console.log(`you played ${note}`)
+// };
 return (
-    <div className="keyboard">
+    <div className="keyboard octave">
+
+        <Keys keyType = "whiteKey" note="C" pitch={props.pitch}/>
+        <Keys keyType = "blackKey" note="C#" pitch={props.pitch}/>
+        <Keys keyType = "whiteKey" note="D" pitch={props.pitch}/>
+        <Keys keyType = "blackKey" note="D#" pitch={props.pitch}/>
+        <Keys keyType = "whiteKey" note="E" pitch={props.pitch}/>
+        <Keys keyType = "whiteKey" note="F" pitch={props.pitch}/>
+        <Keys keyType = "blackKey" note="F#" pitch={props.pitch}/>
+        <Keys keyType = "whiteKey" note="G" pitch={props.pitch}/>
+        <Keys keyType = "blackKey" note="G#" pitch={props.pitch}/>
+        <Keys keyType = "whiteKey" note="A" pitch={props.pitch}/>
+        <Keys keyType = "blackKey" note="A#" pitch={props.pitch}/>
+        <Keys keyType = "whiteKey" note="B" pitch={props.pitch}/>
     
-        <div id="C" className="wholeKey" onClick={() => sound("C")}>
+        {/* <div id="C" className="wholeKey" onClick={() => sound("C")}>
             {props.showNote === true?('C'):("")}
         </div>
 
@@ -60,7 +70,7 @@ return (
 
         <div id="B" className="wholeKey" onClick={() => sound("B")}>
             {props.showNote === true?('B'):("")}
-        </div>
+        </div> */}
     </div>
 );
 }
