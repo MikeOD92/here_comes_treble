@@ -23,4 +23,12 @@ NPM Packages- Tone.js, React-router, React-icons, bcrypt, dotenv, express, jsonw
 
 Day 1: We started the Hackathon by being assigned to our groups and what type of app we would be building. After the opening ceremony, we dove right into 
 brainstorming ideas and quickly came up with this app idea. From there, the development team gathered research on like projects and plug-ins that we could use for 
-our app.
+our app. The UX/UI team and our data scientist spent the next 24 hours doing interviews, field/test research, and putting together a deck with how they envision the 
+app to look and work.
+Day 2: Each team spent the morning continuing tasks from the previous day and the UX/UI handed over the slide deck early afternoon. From there, the development team 
+met with the other teams to decide what is possible to fully buil, what can be added to strech once this is attained, and what is beyond the scope of the Hackathon.
+Ended the day with each developer doing their owns tasks for the rest of the night with check-ins throughout for status and help if needed.
+Day 3: The day started with each member of the development team doing final touches with their tasks and then started putting it all together by mid-morning. We never really ran into any major hiccups and worked very well as  team. We were able to complete a base working model before noon and were able to add some stretch 
+goals. 
+
+#### Winning Group: To be updated...
