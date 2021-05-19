@@ -10,7 +10,7 @@ import CustomStaff from "../components/CustomStaff";
 import { getByPlaceholderText } from '@testing-library/dom';
 
 export default function GamePage() {
-    
+
     const mlittleLamb = ['A','G','F','G', 'A', 'A', 'A', 'G', 'G', 'G', 'A', 'A', 'A', 'A', 'G', 'F', 'G', 'A', 'A', 'A', 'A', 'G', 'G', 'A', 'G', 'F'];
 
     const [iterator, setiterator] = useState(0);
@@ -69,8 +69,8 @@ export default function GamePage() {
 
     }
 
-return (
-    <div>
+    return (
+    <div id="myGame">
     <h1>Piano App Hackathon</h1>
 
     <div className="newPiano">
