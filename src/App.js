@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getUser } from './utilities/users-service';
 import "./App.css";
+import * as userService from './utilities/users-service';
 import {Switch, Route} from 'react-router-dom'
 import {Redirect} from 'react-router-dom';
 import AuthPage from "./pages/AuthPage";
@@ -16,6 +17,12 @@ export default function App() {
 
   const [user, setUser] = useState(getUser());
 
+
+  function handleLogOut() {
+    userService.logOut();
+    setUser(null);
+  }
+
   const twinkleLittleStar=['G', 'G', 'D','D','E', 'E', 'D', 'C', 'C','B','B', 'A', 'A', 'G', 'D','D','C', 'C','B','B', 'A', 'D', 'D', 'C', 'C','B','B', 'A', 'A', 'G', 'G', 'D','D','E', 'E', 'D', 'C', 'C','B','B', 'A', 'A', 'G'];
   const twinkleTitle = 'Twinkle Twinkle Little Star';
 
@@ -28,7 +35,7 @@ export default function App() {
   return (
     <div className="App">
       <>
-      <Top/>
+      <Top user={user} handleLogOut={handleLogOut}/>
       <Switch>
         <Route exact path="/" component={LandingPage}/>
         <Route exact path="/play" component={Homepage}/>
@@ -41,11 +48,6 @@ export default function App() {
       {/* <Homepage/> */}
       {/* <Gamepage song={oldMcD} songTitle="wowza"/> */}
       {/* <AuthPage setUser={setUser} /> */}
-      {user ? 
-      (<div>logged in</div> )
-      : 
-      (<div>logged out</div>)
-      }
     </div>
   );  
 }
