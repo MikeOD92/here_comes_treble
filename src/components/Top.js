@@ -7,7 +7,9 @@ export default function Top({user, handleLogOut}){
     return(
         <div className="nav">
             <div className="navBack">
+                <Link to="/play"> 
                 <FaArrowAltCircleLeft className="backBtn"/>
+                </Link>
                 <h2> New Song</h2>
             </div>
             <Link to="/" className="navLogo">
