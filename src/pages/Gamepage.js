@@ -30,7 +30,7 @@ return (
         {/* <Octave pitch="3"/> */}
         <Octave pitch="4" testNote={note} setNote={setNote} iterator={iterator} setiterator={setiterator}/>
         {/* <Octave pitch="5"/> */}
-        <Keys keyType = "whiteKey" note="C" pitch="5" testNote={note} setNote={setNote}/>
+        <Keys keyType = "whiteKey" note="C" pitch="5" testNote={note} setNote={setNote} iterator={iterator} setiterator={setiterator}/>
     </Piano>
     </div>
 

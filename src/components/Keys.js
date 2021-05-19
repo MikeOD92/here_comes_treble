@@ -14,15 +14,12 @@ export default function Keys(props){
     
     const sound = (e) => {
         e.preventDefault();
+        Tone.start();
         synth.triggerAttack(`${note}${pitch}`);
         if(note === props.testNote){
-                // setTimeout(() => alert('You Clicked the right note'), 300);
                 props.setiterator(iterator += 1)
             }else{
-                // setTimeout(() => alert('You Clicked the wrong note try again'), 300);
-                // alert(e.target[0])
-                console.log(e.target)
-                
+                console.log(e.target) 
             }
             synth.triggerRelease("+0.25");
         
