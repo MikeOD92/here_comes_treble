@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Here Comes Treble!
+ 
+Hello and welcome to our Basic Music Theory app for children aged 4-7! 
+We created this app while particpating in a Hackathon ran by our school, General Assembly.
+We wanted to provide a simple, fun app to spark a child's interest in Music.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to Use the App:
 
-## Available Scripts
+1. Upon opening the app you will see an option to either sign up or start learning. Choose one.
+2. If you chose to sign up, create account.
+3. If you chose to start learning, hover over the image to hear a preview of song. Click arrows to cycle through songs.
+4. Click image of song you would like to learn.
+5. On the GamePage, click the piano key that corresponds to the picture. Keys will turn red for wrong notes.
+6. Once the song is finished, the app will redirect you to the song selection page.
 
-In the project directory, you can run:
+### Technology Stack and NPM Packages Used:
 
-### `yarn start`
+M.E.R.N. Stack- MongoDB, Express.js, React.js, Node.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+NPM Packages- Tone.js, React-router, React-icons, bcrypt, dotenv, express, jsonwebtoken, mongoose, nodemon, react, react-router-dom, react-scripts
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### How it Went Overall:
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Day 1: We started the Hackathon by being assigned to our groups and what type of app we would be building. After the opening ceremony, we dove right into 
+brainstorming ideas and quickly came up with this app idea. From there, the development team gathered research on like projects and plug-ins that we could use for 
+our app.
