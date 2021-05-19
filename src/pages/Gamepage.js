@@ -45,7 +45,7 @@ export default function GamePage(props) {
     }
     if(iterator >= props.song.length){
         alert('You played the Song!');
-        window.location.assign('/play');
+        window.location.assign('/');
 
         // myRedirect()
         // songSort(mlittleLamb);
