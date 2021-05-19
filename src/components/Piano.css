@@ -27,6 +27,6 @@
 	margin-left: calc(var(--width) / -4);
 	margin-right: calc(var(--width) / -4);
 	height: 135px;
-	background-color: rgb(0, 0, 0);
+	background-color: black;
 	z-index: 2;
 }
