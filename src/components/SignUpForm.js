@@ -33,17 +33,17 @@ export default function SignUp({ setUser, showLogin, setShowLogin }) {
 
   const disable = formData.password !== formData.confirm;
   return (
-    <div className="wrapper fadeInDown">
+    <div className="signupForm fadeInDown">
       <div id="formContent" onSubmit={handleSubmit}>
         <div className="fadeIn first">
-          <img src="https://i.imgur.com/W9JYIXE.png" alt="logo" width="60" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sa8-moUEaEHzrfUe-cajo8cFFUFCOxntqcf601_S709s76zQmqo7r4kqd821W7xEj1U&usqp=CAU" alt="logo" width="60" />
         </div>
-        <form >
-          <input type="text" id="login" placeholder="name" className="fadeIn second" name="name" value={formData.name} onChange={handleChange} required />
-          <input type="email" id="email" placeholder="email" className="fadeIn third" name="email" value={formData.email} onChange={handleChange} required />
-          <input type="password" id="password" placeholder="password" className="fadeIn fourth" name="password" value={formData.password} onChange={handleChange} required />
+        <form id="formInputs">
+          <input type="text" id="loginName" className="fadeIn second" placeholder="name"  name="name" value={formData.name} onChange={handleChange} required />
+          <input type="text" id="loginEmail" placeholder="email" className="fadeIn third" name="email" value={formData.email} onChange={handleChange} required />
+          <input type="password" id="loginPassword" placeholder="password" className="fadeIn fourth" name="password" value={formData.password} onChange={handleChange} required />
           <input type="password" id="password" placeholder="confirm password" className="fadeIn fifth" name="confirm" value={formData.confirm} onChange={handleChange} required />
-          <input type="submit" placeholder="name" className="fadeIn sixth" disabled={disable} value="Sign Up" />
+          <input type="submit" className="fadeIn sixth" disabled={disable} value="Sign Up" />
         </form>
         <p className="error-message">&nbsp;{error}</p>
         <div id="formFooter" >

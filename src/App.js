@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getUser } from './utilities/users-service';
 import "./App.css";
+import * as userService from './utilities/users-service';
 import {Switch, Route} from 'react-router-dom'
 import {Redirect} from 'react-router-dom';
 import AuthPage from "./pages/AuthPage";
@@ -16,10 +17,15 @@ export default function App() {
 
   const [user, setUser] = useState(getUser());
 
+  function handleLogOut() {
+    userService.logOut();
+    setUser(null);
+  }
+
   return (
     <div className="App">
       <>
-      <Top/>
+      <Top user={user} handleLogOut={handleLogOut}/>
       <Switch>
         <Route exact path="/" component={LandingPage}/>
         <Route exact path="/play" component={Homepage}/>
@@ -32,11 +38,6 @@ export default function App() {
       {/* <Homepage/> */}
       {/* <Gamepage song={"mll"}/> */}
       {/* <AuthPage setUser={setUser} /> */}
-      {user ? 
-      (<div>logged in</div> )
-      : 
-      (<div>logged out</div>)
-      }
     </div>
   );  
 }
