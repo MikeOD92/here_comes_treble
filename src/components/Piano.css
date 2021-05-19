@@ -3,7 +3,6 @@
 	justify-content: center;
 	margin: 0;
 	min-height: 30vh;
-	background-color: #143f6b;
 }
 .piano {
 	display: flex;
@@ -19,7 +18,7 @@
 .whiteKey {
 	width: var(--width);
 	height: calc(var(--width) * 4);
-	background-color: white;
+	background-color: rgba(255, 255, 255,0.2);
 	border: 1px solid black;
 }
 .blackKey {
@@ -28,6 +27,6 @@
 	margin-left: calc(var(--width) / -4);
 	margin-right: calc(var(--width) / -4);
 	height: 135px;
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	z-index: 2;
 }
