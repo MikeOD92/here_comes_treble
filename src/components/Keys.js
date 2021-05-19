@@ -5,7 +5,7 @@ import * as Tone from "tone";
 
 export default function Keys(props){
 
-    const synth = new Tone.Synth().toDestination();
+   
 
     const {keyType, note, pitch} = props;
     let { iterator } = props;
@@ -13,6 +13,7 @@ export default function Keys(props){
     const notesArr = ['C','C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
     
     const sound = (e) => {
+        const synth = new Tone.Synth().toDestination();
         e.preventDefault();
         Tone.start();
         synth.triggerAttack(`${note}${pitch}`);
