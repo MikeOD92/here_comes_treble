@@ -8,17 +8,17 @@ export default function LandingPage() {
       <div className="landingMid">
 
       <div className="landingOption"> 
-        <a to="/login" className="landingSignup">
+        <Link to="/login" className="landingSignup">
           Sign Up 
           <hr/>
           Log In
-        </a>
+        </Link>
         <h4>Sign Up or Login to track your progress everytime you play!</h4>
       </div>
       <div className="landingOption">
-        <a to="/" className="landingStart">
+        <Link to="/play" className="landingStart">
           Start Learning
-        </a>
+        </Link>
         <h4>Jump right in and start playing as a guest</h4>
       </div>
       </div>
