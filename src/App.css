@@ -115,10 +115,22 @@
 	position: relative;
 }
 .c{
-	left: 10px;
+	left: 30px;
+}
+.d{
+	left:45px;
+}
+.e{
+	left:-20px;
+}
+.f{
+	left: -30px;
 }
 .g{
-	left: 15px;
+	left: -15px;
+}
+.a{
+	left:25px;
 }
 
 .slider {

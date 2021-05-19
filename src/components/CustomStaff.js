@@ -43,24 +43,3 @@ export default function CustomStaff(props) {
         </div>
     )
 }
-
-
-
-//         case "F":
-//             return(<img src='https://i.imgur.com/EToiP8v.png' className="icon" />) 
-//             break;
-//         case "F#":
-//             return(<div><img src='https://i.imgur.com/EToiP8v.png' className="icon sharpIcon"/>#</div>)
-//             break;
-
-//         case "G":
-//             return(<img src='https://i.imgur.com/whLPx2N.png' className="icon" />) 
-//             break;
-//         case "G#":
-//             return(<div><img src='https://i.imgur.com/whLPx2N.png' className="icon sharpIcon" />#</div>)
-//             break;
-//         case "B":
-//             return() 
-//             break;
-//     }
-// }

@@ -5,25 +5,42 @@ import * as Tone from "tone";
 
 export default function Keys(props){
 
-    const synth = new Tone.Synth().toDestination();
+   
 
     const {keyType, note, pitch} = props;
     let { iterator } = props;
 
-    const notesArr = ['C','C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+    // const notesArr = ['C','C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
     
     const sound = (e) => {
         e.preventDefault();
-        Tone.start();
+        const synth = new Tone.Synth().toDestination();
+        
         synth.triggerAttack(`${note}${pitch}`);
+
         if(note === props.testNote){
+                let keysW = document.getElementsByClassName('whiteKey');
+                let keysB = document.getElementsByClassName('blackKey');
+
+                let arrW = Array.from(keysW)
+
+                arrW.map((key)=>{
+                    key.style.backgroundColor="rgba(252,255,255,0.2)";
+                })
+
+                let arrB = Array.from(keysB)
+
+                arrB.map((key)=>{
+                    key.style.backgroundColor="black";
+                })
+
                 props.setiterator(iterator += 1)
             }else{
-                console.log(e.target) 
+                e.target.style.backgroundColor='rgb(252,104,104)';
             }
             synth.triggerRelease("+0.25");
-        
     }
+
     const img = (note) =>{
         switch(note){
             case "A":
@@ -56,7 +73,6 @@ export default function Keys(props){
             case "F#":
                 return(<div><img src='https://i.imgur.com/EToiP8v.png' className="icon sharpIcon"/>#</div>)
                 break;
-
             case "G":
                 return(<img src='https://i.imgur.com/whLPx2N.png' className="icon" />) 
                 break;
