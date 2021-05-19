@@ -40,10 +40,14 @@ export default function GamePage(props) {
     //     })
     //     return sortedOutput;
     // }
-
+    myRedirect = () => {
+        return <Redirect to='/play'/>;
+    }
     if(iterator >= props.song.length){
         alert('You played the Song!');
         window.location.assign('/play');
+
+        // myRedirect()
         // songSort(mlittleLamb);
 
         // const synth = new Tone.Synth().toDestination();

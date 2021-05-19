@@ -8,7 +8,7 @@ import AuthPage from "./pages/AuthPage";
 import Gamepage from './pages/Gamepage';
 import GameImageSlider from './components/GameImageSlider';
 import Homepage from './pages/Homepage';
-import Top from './components/Top'
+import NavBar from './components/Top'
 import LandingPage from './pages/LandingPage';
 
 
