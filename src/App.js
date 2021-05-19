@@ -5,12 +5,14 @@ import AuthPage from "./pages/AuthPage";
 import Gamepage from './pages/Gamepage';
 import GameImageSlider from './components/GameImageSlider';
 import Homepage from './pages/Homepage';
+import LandingPage from './pages/LandingPage';
 export default function App() {
 
   const [user, setUser] = useState(getUser());
 
   return (
     <div className="App">
+      <LandingPage />
       <Homepage/>
       <Gamepage/>
       <AuthPage setUser={setUser} />
