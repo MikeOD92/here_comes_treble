@@ -3,7 +3,7 @@ import { GameImageData } from './GameImageData';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const GameImageSlider = ({slides, sample, song, songPath}) => {
+const GameImageSlider = ({slides, sample, songPath}) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -28,7 +28,7 @@ const GameImageSlider = ({slides, sample, song, songPath}) => {
           <div className={index === current ? 'slide active' : 'slide'} key = {index}>
             {index === current && (
                <Link to={slide.songPath} >
-               <img src={slide.image} alt={slide.alt} onMouseOver={slide.sample} song={slide.song} className="image"></img>
+               <img src={slide.image} alt={slide.alt} onMouseOver={slide.sample} className="image"></img>
                </Link>
             )}
           </div>

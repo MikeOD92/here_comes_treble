@@ -160,8 +160,8 @@ body {
 }
 
 .image:hover {
-	width: 70%;
-	height: 80%;
+	width: 75%;
+	height: 75%;
 	border-radius: 10px;
 }
 
@@ -196,4 +196,36 @@ body {
 	opacity: 1;
 	transition-duration: 1s;
 	transform: scale(1.08);
+}
+
+@media screen and (max-width: 992px) {
+	.image {
+		width: 35%;
+		height: 35%;
+		border-radius: 10px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.image:hover {
+		width: 55%;
+		height: 55%;
+		border-radius: 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.image {
+		width: 25%;
+		height: 25%;
+		border-radius: 10px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.image:hover {
+		width: 35%;
+		height: 35%;
+		border-radius: 10px;
+	}
 }
