@@ -25,7 +25,8 @@
 }
 
 body {
-	background-color: aquamarine;
+	background: url("https://i.imgur.com/VqMUEqI.jpg");
+	background-size: cover;
 }
 
 .bigBoard {
