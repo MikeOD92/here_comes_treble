@@ -21,40 +21,51 @@ export default function GamePage() {
 
     const [note, setNote] = useState(mlittleLamb[iterator]); // this will be props passed in for the song selected
     //useState(props.song[iterator]) 
-    let sortedOutput = [];
+    // let sortedOutput = [];
 
-    const songSort = (song) => {
-        song.map((note)=>{
-            sortedOutput.push({
-                time: '0:2',
-                note: note,
-                velocity: 0.4
-            })
-        })
-        return sortedOutput;
-    }
+    // const songSort = (song) => {
+    //     let time = [0]
+    //     song.map((note)=>{
+    //         sortedOutput.push({
+    //             time: time.join(''),
+    //             note: `${note}4`,
+    //             velocity: 0.4
+    //         })
+    //         time.map((unit, index)=>{
+    //             if(unit === Number && index !== 0){
+    //                 unit +=2;
+    //             }
+    //         })
+    //         time.push(":2");
+    //     })
+    //     return sortedOutput;
+    // }
 
     if(iterator >= mlittleLamb.length){
 
-        songSort(mlittleLamb);
+        // songSort(mlittleLamb);
 
-        // const synth = new Tone.Synth().toDestination();
+        const synth = new Tone.Synth().toDestination();
+        mlittleLamb.forEach((note)=>{
+            synth.triggerAttackRelease(note, '8n');
+        })
+        
         // const part = new Tone.Part(((time, value) => {
         //     // the value is an object which contains both the note and the velocity
         //     synth.triggerAttackRelease(value.note, "8n", time, value.velocity);
-        // }), ).start(0);
+        // }), sortedOutput).start(0);
         // Tone.Transport.start();
 
         // const timeouts = () =>{
         //     setiterator(0);
         //     Tone.Transport.stop()
         // }
-        console.log(sortedOutput); 
+        // console.log(sortedOutput); 
         // with this the time values in the array of obj is giving us a problem, 
         // this assumes this will take a variable at all. 
         // look on the documentation how its noted 0:2, 0:75 ... 
         
-        // setTimeout(()=>timeouts(), 3000);
+        // setTimeout(()=>timeouts(), 5000);
 
     }
 
