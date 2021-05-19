@@ -7,6 +7,7 @@ import Piano from '../components/Piano.js'
 import Keys from '../components/Keys.js'
 import '../components/Piano.css'
 import CustomStaff from "../components/CustomStaff";
+import { Redirect } from 'react-router-dom'
 import { getByPlaceholderText } from '@testing-library/dom';
 
 export default function GamePage(props) {
@@ -42,8 +43,8 @@ export default function GamePage(props) {
 
     if(iterator >= props.song.length){
         alert('You played the Song!');
-        window.location.assign('/');
         return <Redirect to='/play'/>
+        window.location.assign('/');
 
         // songSort(mlittleLamb);
 
