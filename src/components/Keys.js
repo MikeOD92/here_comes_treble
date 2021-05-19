@@ -25,7 +25,7 @@ export default function Keys(props){
                 let arrW = Array.from(keysW)
 
                 arrW.map((key)=>{
-                    key.style.backgroundColor="rgba(252,255,255,0.2)";
+                    key.style.backgroundColor="rgba(252,255,255, 1)";
                 })
 
                 let arrB = Array.from(keysB)
