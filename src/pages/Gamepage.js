@@ -9,17 +9,17 @@ import '../components/Piano.css'
 import CustomStaff from "../components/CustomStaff";
 import { getByPlaceholderText } from '@testing-library/dom';
 
-export default function GamePage() {
+export default function GamePage(props) {
 
-    const mlittleLamb = ['A','G','F','G', 'A', 'A', 'A', 'G', 'G', 'G', 'A', 'A', 'A', 'A', 'G', 'F', 'G', 'A', 'A', 'A', 'A', 'G', 'G', 'A', 'G', 'F'];
+    // const mlittleLamb = ['A','G','F','G', 'A', 'A', 'A', 'G', 'G', 'G', 'A', 'A', 'A', 'A', 'G', 'F', 'G', 'A', 'A', 'A', 'A', 'G', 'G', 'A', 'G', 'F'];
 
     const [iterator, setiterator] = useState(0);
 
     useEffect(() => {
-        setNote(mlittleLamb[iterator])//(props.song[iterator]) 
+        setNote((props.song[iterator]))
     }, [iterator])
 
-    const [note, setNote] = useState(mlittleLamb[iterator]); // this will be props passed in for the song selected
+    const [note, setNote] = useState((props.song[iterator])); // this will be props passed in for the song selected
     //useState(props.song[iterator]) 
     // let sortedOutput = [];
 
@@ -41,14 +41,14 @@ export default function GamePage() {
     //     return sortedOutput;
     // }
 
-    if(iterator >= mlittleLamb.length){
+    if(iterator >= props.song[iterator].length){
 
         // songSort(mlittleLamb);
 
-        const synth = new Tone.Synth().toDestination();
-        mlittleLamb.forEach((note)=>{
-            synth.triggerAttackRelease(note, '8n');
-        })
+        // const synth = new Tone.Synth().toDestination();
+        // mlittleLamb.forEach((note)=>{
+        //     synth.triggerAttackRelease(note, '8n');
+        // })
         
         // const part = new Tone.Part(((time, value) => {
         //     // the value is an object which contains both the note and the velocity
@@ -71,7 +71,8 @@ export default function GamePage() {
 
     return (
     <div id="myGame">
-    <h1>Piano App Hackathon</h1>
+    
+    {props.songTitle?(<h1>{props.songTitle}</h1>):('')}
 
     <div className="newPiano">
         <CustomStaff note={note}/>
