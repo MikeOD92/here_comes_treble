@@ -10,7 +10,7 @@ import CustomStaff from "../components/CustomStaff";
 import { getByPlaceholderText } from '@testing-library/dom';
 
 export default function GamePage() {
-
+    
     const mlittleLamb = ['A','G','F','G', 'A', 'A', 'A', 'G', 'G', 'G', 'A', 'A', 'A', 'A', 'G', 'F', 'G', 'A', 'A', 'A', 'A', 'G', 'G', 'A', 'G', 'F'];
 
     const [iterator, setiterator] = useState(0);
