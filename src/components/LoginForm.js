@@ -25,6 +25,7 @@ export default function LogIn({ setUser, setShowLogin, showLogin }) {
       // payload of the JSON Web Token (JWT)
       const user = await usersService.login(credentials);
       setUser(user);
+      history.push('/play');
     } catch {
       setError('Log In Failed - Try Again');
     }
