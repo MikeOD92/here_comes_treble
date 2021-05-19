@@ -9,15 +9,15 @@ export const GameImageData = [
     alt: "A cute cartoon sheep",
     sample: function playSample() {
       const synth = new Tone.Synth().toDestination();
-      const now = Tone.now()
-      synth.triggerAttackRelease("A4", "8n", now)
-      synth.triggerAttackRelease("G4", "8n", now + 0.5)
-      synth.triggerAttackRelease("F4", "8n", now + 1)
-      synth.triggerAttackRelease("G4", "8n", now + 1.5)
-      synth.triggerAttackRelease("A4", "8n", now + 2)
-      synth.triggerAttackRelease("A4", "8n", now + 2.5)
-      synth.triggerAttackRelease("A4", "8n", now + 3)
-    }
+      const now = Tone.now();
+      synth.triggerAttackRelease("A4", "8n", now);
+      synth.triggerAttackRelease("G4", "8n", now + 0.5);
+      synth.triggerAttackRelease("F4", "8n", now + 1);
+      synth.triggerAttackRelease("G4", "8n", now + 1.5);
+      synth.triggerAttackRelease("A4", "8n", now + 2);
+      synth.triggerAttackRelease("A4", "8n", now + 2.5);
+      synth.triggerAttackRelease("A4", "8n", now + 3);
+      }
   }, 
   { 
     songPath: "/game/old-mcdonald",

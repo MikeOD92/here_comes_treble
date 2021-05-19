@@ -22,7 +22,6 @@ export default function GamePage(props) {
     const [note, setNote] = useState((props.song[iterator])); // this will be props passed in for the song selected
     //useState(props.song[iterator]) 
     // let sortedOutput = [];
-
     // const songSort = (song) => {
     //     let time = [0]
     //     song.map((note)=>{
@@ -40,14 +39,12 @@ export default function GamePage(props) {
     //     })
     //     return sortedOutput;
     // }
-    myRedirect = () => {
-        return <Redirect to='/play'/>;
-    }
+
     if(iterator >= props.song.length){
         alert('You played the Song!');
         window.location.assign('/');
+        return <Redirect to='/play'/>
 
-        // myRedirect()
         // songSort(mlittleLamb);
 
         // const synth = new Tone.Synth().toDestination();
