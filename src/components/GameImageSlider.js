@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import { GameImageData } from './GameImageData'
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
+import * as Tone from "tone";
 
-const GameImageSlider = ({slides}) => {
+const GameImageSlider = ({slides, sample}) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -18,7 +19,6 @@ const GameImageSlider = ({slides}) => {
     return null;
   }
 
-
   return (
     <section className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={previousSlide} />
@@ -27,7 +27,7 @@ const GameImageSlider = ({slides}) => {
         return (
           <div className={index === current ? 'slide active' : 'slide'} key = {index}>
             {index === current && (
-               <img src={slide.image} alt={slide.alt} className="image"></img>
+               <img src={slide.image} alt={slide.alt} onMouseOver={slide.sample}className="image"></img>
             )}
           </div>
         )
