@@ -7,6 +7,7 @@ import Piano from '../components/Piano.js'
 import Keys from '../components/Keys.js'
 import '../components/Piano.css'
 import CustomStaff from "../components/CustomStaff";
+import { Redirect } from 'react-router-dom'
 import { getByPlaceholderText } from '@testing-library/dom';
 
 export default function GamePage(props) {
@@ -22,7 +23,6 @@ export default function GamePage(props) {
     const [note, setNote] = useState((props.song[iterator])); // this will be props passed in for the song selected
     //useState(props.song[iterator]) 
     // let sortedOutput = [];
-
     // const songSort = (song) => {
     //     let time = [0]
     //     song.map((note)=>{
@@ -42,9 +42,10 @@ export default function GamePage(props) {
     // }
 
     if(iterator >= props.song.length){
-        alert('You played the Song!!');
+        alert('You played the Song!');
+        return <Redirect to='/play'/>
         window.location.assign('/');
-        
+
         // songSort(mlittleLamb);
 
         // const synth = new Tone.Synth().toDestination();
