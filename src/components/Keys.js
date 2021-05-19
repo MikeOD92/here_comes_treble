@@ -5,8 +5,6 @@ import * as Tone from "tone";
 
 export default function Keys(props){
 
-   
-
     const {keyType, note, pitch} = props;
     let { iterator } = props;
 
