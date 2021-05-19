@@ -69,66 +69,72 @@
 	position: relative;
 	left: 5px;
 }
-#staff{
-	width:475px;
+#staff {
+	width: 475px;
 	background-color: rgb(255, 248, 192);
 	padding: 2%;
-	height: 30vh;
+	height: 400px;
 	margin: 10%;
 	border-right: solid 4px black;
 	border-radius: 5px;
 	margin: 10px auto;
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 5vh 5vh 5vh 5vh 5vh;
+	grid-template-rows: 40px 40px 40px 40px 40px;
+	overflow: auto;
 }
-.staff-line{
-
+.staff-line {
 	border-bottom: solid 1px black;
 	/* margin-top: 6%; */
 }
-.stafficon{
-	width:50px;
-	height:50px;
+.stafficon {
+	width: 50px;
+	height: 50px;
 }
 /* .staffNote{
 	position: absolute;
 } */
-.newPiano{
+.newPiano {
 	display: flex;
 	flex-direction: column;
 }
-.icon{
-	width:50px;
-	height:50px;
-	z-index:-100;
+.icon {
+	width: 50px;
+	height: 50px;
+	z-index: -100;
 	position: relative;
-	top: 25vh;
+	top: 75%;
 }
-.sharpIcon{
+.sharpIcon {
 	position: relative;
-	top: 10vh;
-	width:25px;
-	height:25px;
+	top: -100%;
+	width: 25px;
+	height: 25px;
 }
-.c,.d,.e,.f,.g,.a,.b{
+.c,
+.d,
+.e,
+.f,
+.g,
+.a,
+.b {
 	position: relative;
 }
-.c{
+.c {
 	left: 30px;
 }
-.d{
-	left:45px;
+.d {
+	left: 45px;
 }
-.e{
-	left:-20px;
+.e {
+	left: -20px;
 }
-.f{
+.f {
 	left: -30px;
 }
-.g{
+.g {
 	left: -15px;
 }
-.a{
-	left:25px;
+.a {
+	left: 25px;
 }
