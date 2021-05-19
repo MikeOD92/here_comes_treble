@@ -148,8 +148,14 @@
 }
 
 .image {
-	width: 60%;
-	height: 60%;
+	width: 55%;
+	height: 55%;
+	border-radius: 10px;
+}
+
+.image:hover {
+	width: 70%;
+	height: 80%;
 	border-radius: 10px;
 }
 

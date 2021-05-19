@@ -27,7 +27,7 @@ const GameImageSlider = ({slides}) => {
         return (
           <div className={index === current ? 'slide active' : 'slide'} key = {index}>
             {index === current && (
-               <img src={slide.image} alt="CHANGE THIS" className="image"></img>
+               <img src={slide.image} alt={slide.alt} className="image"></img>
             )}
           </div>
         )
