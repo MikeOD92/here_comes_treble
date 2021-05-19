@@ -36,7 +36,7 @@ export default function SignUp({ setUser, showLogin, setShowLogin }) {
     <div className="signupForm fadeInDown">
       <div id="formContent" onSubmit={handleSubmit}>
         <div className="fadeIn first">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sa8-moUEaEHzrfUe-cajo8cFFUFCOxntqcf601_S709s76zQmqo7r4kqd821W7xEj1U&usqp=CAU" alt="logo" width="60" />
+          <img src="https://img.freepik.com/free-vector/note-music-logo-design_93835-645.jpg?size=338&ext=jpg" alt="logo" width="60" />
         </div>
         <form id="formInputs">
           <input type="text" id="loginName" className="fadeIn second" placeholder="name"  name="name" value={formData.name} onChange={handleChange} required />
