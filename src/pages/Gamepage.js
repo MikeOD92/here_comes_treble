@@ -41,8 +41,9 @@ export default function GamePage(props) {
     //     return sortedOutput;
     // }
 
-    if(iterator >= props.song[iterator].length){
-
+    if(iterator >= props.song.length){
+        alert('You played the Song!');
+        window.location.assign('/play');
         // songSort(mlittleLamb);
 
         // const synth = new Tone.Synth().toDestination();
