@@ -25,6 +25,7 @@ export default function LogIn({ setUser, setShowLogin, showLogin }) {
       // payload of the JSON Web Token (JWT)
       const user = await usersService.login(credentials);
       setUser(user);
+      history.push('/play');
     } catch {
       setError('Log In Failed - Try Again');
     }
@@ -34,7 +35,7 @@ export default function LogIn({ setUser, setShowLogin, showLogin }) {
     <div className="loginForm fadeInDown">
       <div className="formContent" onSubmit={handleSubmit}>
         <div className="fadeIn first">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9sa8-moUEaEHzrfUe-cajo8cFFUFCOxntqcf601_S709s76zQmqo7r4kqd821W7xEj1U&usqp=CAU" alt="logo" width="60" />
+          <img src="https://img.freepik.com/free-vector/note-music-logo-design_93835-645.jpg?size=338&ext=jpg" className="logoImg" alt="logo"/>
         </div>
         <form>
           <input type="text" id="loginEmail" className="fadeIn second" placeholder="email" name="email" value={credentials.email} onChange={handleChange} required />
