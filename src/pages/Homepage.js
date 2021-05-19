@@ -5,7 +5,7 @@ import GameImageSlider from '../components/GameImageSlider'
 
 const Homepage = () => {
   return ( 
-  <GameImageSlider slides={GameImageData}/>
+  <GameImageSlider slides={GameImageData} sample={GameImageData}/>
   )
 }
 
