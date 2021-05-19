@@ -5,8 +5,6 @@ import * as Tone from "tone";
 
 export default function Keys(props){
 
-   
-
     const {keyType, note, pitch} = props;
     let { iterator } = props;
 
@@ -25,13 +23,13 @@ export default function Keys(props){
                 let arrW = Array.from(keysW)
 
                 arrW.map((key)=>{
-                    key.style.backgroundColor="rgba(252,255,255, 1)";
+                    key.style.backgroundColor="rgb(252,255,255)";
                 })
 
                 let arrB = Array.from(keysB)
 
                 arrB.map((key)=>{
-                    key.style.backgroundColor="black";
+                    key.style.backgroundColor="rgb(0,0,0)";
                 })
 
                 props.setiterator(iterator += 1)
